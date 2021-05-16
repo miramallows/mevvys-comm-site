@@ -1,0 +1,76 @@
+@import url('http://fonts.cdnfonts.com/css/crewniverse');
+@import url('http://fonts.cdnfonts.com/css/rimouski');
+
+html {
+    background: url('https://i.imgur.com/bZTbnbG.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.big_container {
+    max-width: 500px;
+    width: 50%;
+    min-width: 300px;
+    margin: auto;
+}
+.main_heading {
+    font-family: Crewniverse;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #6d6d91;
+    margin-top: 20px;
+}
+
+.sub_heading {
+    color: #c0ebeb;
+    font-size: 20px;
+    font-family: Rimouski;
+    font-weight: 100;
+    font-stretch: extra-expanded;
+    margin-bottom: 10px;
+}
+
+.nav_container {
+    max-width: inherit;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav_option {
+    max-width: calc(100%/3);
+    flex: 10 40%;
+    margin: auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+    .main_heading {
+        font-size: 40px;
+    }
+    .nav_option {
+        max-width: unset;
+        flex: unset;
+        width: 100px;
+    }
+
+}
+
+.nav_option_img {
+    width: 130%;
+    margin: -15% -15%;
+}
+
+.nav_option_text {
+    text-transform: uppercase;
+    font-family: Crewniverse;
+    color: #6d6d91;
+}
