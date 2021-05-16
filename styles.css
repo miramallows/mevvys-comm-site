@@ -2,7 +2,7 @@
 @import url('http://fonts.cdnfonts.com/css/rimouski');
 
 html {
-    background: url('https://i.imgur.com/bZTbnbG.png') no-repeat center center fixed;
+    background: url('https://i.imgur.com/nA4vhcp.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -34,6 +34,13 @@ html {
     font-weight: 100;
     font-stretch: extra-expanded;
     margin-bottom: 10px;
+    transition: 0.2s ease;
+}
+
+.sub_heading:hover {
+    font-size: 22px;
+    color: #a1d1d1;
+    transition: 0.2s ease;
 }
 
 .nav_container {
@@ -52,6 +59,20 @@ html {
     text-align: center;
 }
 
+.nav_option:hover .nav_option_text {
+    color: #9fa2c7;
+    padding-top: 5px;
+    font-size: 22px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.nav_option:hover .nav_option_img {
+    opacity: 90%;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 400px) {
     .main_heading {
         font-size: 40px;
@@ -65,18 +86,67 @@ html {
 }
 
 .nav_option_img {
-    width: 130%;
+    opacity: 100%;
+    width: 120%;
     margin: -15% -15%;
+    transition: 0.3s ease;
 }
 
 .nav_option_text {
     text-transform: uppercase;
     font-family: Crewniverse;
     color: #6d6d91;
+    transition: 0.3s ease;
 }
 
 .plan_banner {
     transform: rotate(-2deg);
     width: 80%;
     margin-top: 15px;
+    transition: 0.3s ease;
+
+}
+.plan_banner:hover {
+    transform: rotate(2deg);
+    transition: 0.3s ease;
+}
+
+.footer {
+    width: 300px;
+    bottom: 5px;
+    left: 50%;
+    margin: auto auto auto -150px;
+    position:absolute;
+
+}
+.socials_container {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.socials_option {
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    transition: 0.2s ease;
+}
+.socials_option:hover {
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    opacity: 80%;
+    transition: 0.2s ease;
+
+}
+
+
+.copyright {
+    font-size: 12px;
+    color: white;
+    font-family: Rimouski;
 }
