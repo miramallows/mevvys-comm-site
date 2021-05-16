@@ -74,3 +74,9 @@ html {
     font-family: Crewniverse;
     color: #6d6d91;
 }
+
+.plan_banner {
+    transform: rotate(-2deg);
+    width: 80%;
+    margin-top: 15px;
+}
